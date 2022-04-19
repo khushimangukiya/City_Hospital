@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 function Header(props) {
     return (
@@ -20,18 +21,19 @@ function Header(props) {
             <header id="header" className="fixed-top">
                 <div className="container d-flex align-items-center">
                     <div className="logo">
-                        <a href="index.html">
+                        <Link  to={"/"}>
                             <h1 className="logo me-auto">City</h1><br />
                             <h2 className="logo-tiny-text me-auto">Multispeciality Hospital</h2>
-                        </a>
+                        </Link>
                     </div>
                     <nav id="navbar" className="navbar order-last order-lg-0">
                         <ul>
-                            <li><a className="nav-link scrollto active" href="index.html">Home</a></li>
-                            <li><a className="nav-link scrollto" href="./pages/departments.html">Departments</a></li>
-                            <li><a className="nav-link scrollto" href="./pages/doctors.html">Doctors</a></li>
-                            <li><a className="nav-link scrollto " href="./pages/about.html">About</a></li>
-                            <li><a className="nav-link scrollto" href="./pages/contact.html">Contact</a></li>
+                            {/* <li><a className="nav-link scrollto active" href="index.html">Home</a></li> */}
+                            <li><NavLink className="nav-link scrollto" to={"/"}>Home</NavLink></li>
+                            <li><NavLink className="nav-link scrollto" to={"/Departments"}>Departments</NavLink></li>
+                            <li><NavLink className="nav-link scrollto" to={"/Doctors"}>Doctors</NavLink></li>
+                            <li><NavLink className="nav-link scrollto " to={"/About"}>About</NavLink></li>
+                            <li><NavLink className="nav-link scrollto" to={"/Contact"}>Contact</NavLink></li>
                         </ul>
                         <i className="bi bi-list mobile-nav-toggle" />
                     </nav>
