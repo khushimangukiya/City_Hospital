@@ -29,10 +29,10 @@ function Header(props) {
                     <nav id="navbar" className="navbar order-last order-lg-0">
                         <ul>
                             {/* <li><a className="nav-link scrollto active" href="index.html">Home</a></li> */}
-                            <li><NavLink className="nav-link scrollto" to={"/"}>Home</NavLink></li>
+                            <li><NavLink className="nav-link scrollto" exact to={"/"}>Home</NavLink></li>
                             <li><NavLink className="nav-link scrollto" to={"/Departments"}>Departments</NavLink></li>
                             <li><NavLink className="nav-link scrollto" to={"/Doctors"}>Doctors</NavLink></li>
-                            <li><NavLink className="nav-link scrollto " to={"/About"}>About</NavLink></li>
+                            <li><NavLink className="nav-link scrollto" to={"/About"}>About</NavLink></li>
                             <li><NavLink className="nav-link scrollto" to={"/Contact"}>Contact</NavLink></li>
                         </ul>
                         <i className="bi bi-list mobile-nav-toggle" />
