@@ -7,6 +7,8 @@ import Departments from './Containers/Departments/Departments';
 import Doctors from './Containers/Doctors/Doctors';
 import About from './Containers/About/About';
 import Contact from './Containers/Contact/Contact';
+import MakeAnAppointment from './Containers/MakeAnAppointment/MakeAnAppointment';
+import LoginSignUp from './Containers/LoginSignUp/LoginSignUp';
 
 function App() {
   return (
@@ -18,8 +20,9 @@ function App() {
         <Route path={"/Doctors"} component={Doctors} />
         <Route path={"/About"} component={About} />
         <Route path={"/Contact"} component={Contact} />
+        <Route path={"/MakeAnAppointment"} component={MakeAnAppointment} />
+        <Route path={"/LoginSignUp"} component={LoginSignUp} />
       </Switch>
-      <Home />
       <Footer />
     </>
   );
